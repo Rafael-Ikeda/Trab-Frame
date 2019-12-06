@@ -1,0 +1,54 @@
+.hide{
+    display: none;
+}
+.groupEditarExcluir{
+    display: flex;
+}
+.bntExcluir{
+    margin-left: 5px;
+    width: 100px;
+}
+.btnEditar{
+    width: 100px;
+}
+nav{
+	background: brown;
+	padding: 10px;
+}
+a:link{
+text-decoration:none;
+}
+.icones{
+	margin-right: 10rem;
+	margin-bottom: 12px;
+}
+.elemento{
+	margin-right: 20px;
+	font-size: 22px;
+	margin-top: 30px;
+	color: white;
+	outline: none;
+	float: right;
+}
+.elemento:hover{
+	font-size: 24px;
+	color: white;
+}
+.container1{
+	margin-top: 50px;
+	margin-left: 25%;
+}
+#titulo1{
+	font-size: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.img{
+	width: 80px;
+	margin-left: 50px;
+	margin-top: 12px;
+}
+.imagem{
+	width: 150px;
+}
+

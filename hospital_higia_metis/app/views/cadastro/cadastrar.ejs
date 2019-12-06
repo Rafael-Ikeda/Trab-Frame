@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang='pt-br'>
+<head>
+ 	<meta charset="utf-8">
+ 	<!-- Required meta tags -->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+	 <!-- Bootstrap CSS -->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/cadastrar.css">
+ 
+	 <!-- favicon -->
+	 <link rel="shortcut icon" href="img/iconLogo.png"></link>
+ 
+	 <title>Hígia Métis</title>
+</head>
+<body>
+
+	<nav>
+		<div class="icones">
+			<img class="img" src="img/logo2.png"  alt="logo3dprint">
+			<a class="elemento" href="/">Sair</a>
+			<a class="elemento" href="cadastrar">Cadastrar</a>
+			<a class="elemento" href="index">Home</a>
+		</div>
+	</nav>
+
+	<section class="container">
+		<h2 id="titulo1">Inserir</h2>
+		<div class="simObg">
+			<p>*obrigatório</p>
+		</div>
+		<form action="/inserir" method="POST" enctype="multipart/form-data">
+			
+			<div class="form-group">
+				<input  class="form-control" type="text" name="nome" placeholder="Nome Completo*"  required>
+			</div>
+			
+			<div class="form-group">
+				<input  class="form-control" type="number" name="idade" placeholder="Idade">
+			</div>
+			
+			<div class="form-group">
+				<input  class="form-control" type="number" name="telefone" placeholder="Telefone">
+			</div>
+			
+			<div class="form-group">
+				<input  class="form-control" type="text" name="plano" placeholder="Plano de saúde">
+			</div>
+			
+			<div class="form-group">
+				<textarea  class="form-control" name="ferimento" rows="4" cols="5" placeholder="Descrição do ferimento*" required></textarea>
+			</div>
+
+			<div class="form-group">
+				<div class='input-wrapper'>
+					<label for='pwd'>
+						Foto do Paciente <span class="simObg">*</span> &#187;
+					</label>
+					<input id='pwd' class="form-control" type="file" name="uploaded_image" accept="image/*" value='' required>
+				
+					<span id='file-name'></span>
+				</div>
+			</div>
+	
+			<button type="submit" class="btn btn-outline-primary btnEditar">Inserir</button>
+		</form>
+
+	</section>
+	
+
+	<script type="text/javascript" src="components/nomeImage.js"></script>
+</body>
+</html> 

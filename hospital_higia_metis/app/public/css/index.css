@@ -1,0 +1,51 @@
+.hide{
+	display: none;
+}
+.groupPaciente{
+	width: 250px;
+	text-align: center;
+}
+.btn-outline-secondary{
+	border: 0px;
+}
+.btn-outline-secondary:hover{
+	background-color: transparent;
+	font-weight: bold;
+	color: black;
+}
+nav{
+	background: brown;
+	padding: 10px;
+}
+a:link{
+text-decoration:none;
+}
+.icones{
+	margin-right: 10rem;
+	margin-bottom: 12px;
+}
+.elemento{
+	margin-right: 20px;
+	font-size: 22px;
+	margin-top: 30px;
+	color: white;
+	outline: none;
+	float: right;
+}
+.elemento:hover{
+	font-size: 24px;
+	color: white;
+}
+section{
+	margin-top: 40px;
+}
+#titulo1{
+	font-size: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.img{
+	width: 80px;
+	margin-left: 50px;
+	margin-top: 12px;
+}

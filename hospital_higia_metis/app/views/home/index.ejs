@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang='pt-br'>
+<head>
+ 	<meta charset="utf-8">
+ 	<!-- Required meta tags -->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+	 <!-- Bootstrap CSS -->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/index.css">
+ 
+	 <!-- favicon -->
+	 <link rel="shortcut icon" href="img/iconLogo.png"></link>
+ 
+	 <title>Hígia Métis</title>
+	 
+</head>
+<body>
+	<nav>
+		<div class="icones">
+			<img class="img" src="img/logo2.png"  alt="logo3dprint">
+			<a class="elemento" href="/">Sair</a>
+			<a class="elemento" href="cadastrar">Cadastrar</a>
+			<a class="elemento" href="index">Home</a>
+		</div>
+	</nav>
+	<section class="container">
+		<h2 id="titulo1">Pacientes cadastrados</h2>
+		<div class="row d-flex">
+			<% for(var i=0; i<pacientes.length; i++) { %>
+			<div id="linha-<%= i+1%>" class="col-md-4 col-lg-3 col-sm-12 groupPaciente">
+				<form action="/paciente" method="POST">
+					<div class="buttonNome">
+						<input type="text" name="id_clienteEditar" value="<%= pacientes[i]._id %>" class="hide">
+						<button class="btn btn-outline-secondary" type="submit">
+							<div class="imagemFerimento">
+								<img src="http://localhost:3000/upload_de_arquivos/upload_images/<%=pacientes[i].img_name%>" class="img-fluid img-thumbnail" alt="<%=pacientes[i].img_name%>">
+							</div>
+							<%= pacientes[i].nome %>
+						</button>
+					</div>
+				</form>
+			</div>
+			<% } %>
+		</div>
+	</section>
+	
+	
+
+</body>
+</html> 

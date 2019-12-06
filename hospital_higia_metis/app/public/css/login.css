@@ -1,0 +1,23 @@
+body{
+    background-color: brown;
+}
+.seta img{
+    float: right;
+    width: 100px;
+    padding: 10px 10px;
+}
+.seta img:hover{
+    width: 120px;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 500px;
+    height: 550px;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}

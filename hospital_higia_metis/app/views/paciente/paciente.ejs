@@ -1,0 +1,60 @@
+<!Doctype html>
+<html lang='pt-br'>
+<head>
+ 	<meta charset="utf-8">
+ 	<!-- Required meta tags -->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+	 <!-- Bootstrap CSS -->
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/paciente.css">
+ 
+	 <!-- favicon -->
+	 <link rel="shortcut icon" href="img/iconLogo.png"></link>
+ 
+	 <title>Hígia Métis</title>
+	 
+</head>
+<body>
+	<nav>
+		<div class="icones">
+			<img class="img" src="img/logo2.png"  alt="logo3dprint">
+			<a class="elemento" href="/">Sair</a>
+			<a class="elemento" href="cadastrar">Cadastrar</a>
+			<a class="elemento" href="index">Home</a>
+		</div>
+	</nav>
+	
+	<div class="container1">
+		<div class="row d-flex align-items-center">
+			<div class="col-md-4 col-lg-4 col-sm-4 imagemFerimento">
+				<img src="http://localhost:3000/upload_de_arquivos/upload_images/<%=pacientes[0].img_name%>" class="img-fluid img-thumbnail" alt="<%=pacientes[0].img_name%>">
+			</div>
+			<div class="col-md-8 col-lg-8 col-sm-8">
+				<h2><%= pacientes[0].nome %></h2>
+				<p>Idade: <%= pacientes[0].idade %></p>
+				<p>Telefone: <%= pacientes[0].telefone %></p>
+				<p>Plano de saúde: <%= pacientes[0].plano %></p>
+				<p>Ferimento: <%= pacientes[0].ferimento %></p>
+				
+				<div class="groupEditarExcluir">
+					<form action="/editar" method="POST">
+						<div>
+							<input type="text" name="id_clienteEditar" value="<%= pacientes[0]._id %>" class="hide">
+							<button type="submit" class="btn btn-outline-primary btnEditar">Editar</button>
+						</div>
+					</form>
+					<form action="/excluir" method="POST">
+						<div>
+							<input type="text" name="id_clienteApagar" value="<%= pacientes[0]._id %>" class="hide">
+							<button type="submit" class="btn btn-outline-danger bntExcluir">Excluir</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html> 

@@ -1,0 +1,61 @@
+input[type='file'] {
+    display: none;
+}
+.input-wrapper label {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(216, 215, 215);
+    color: rgb(119, 116, 116);
+    cursor: pointer;
+    padding: 6px 20px;
+    display: block;
+}
+.input-wrapper label:hover {
+    border: 1px solid rgb(8, 8, 8);
+    color: rgb(14, 13, 13);
+}
+.simObg{
+    font-weight: bold;
+    color: brown;
+}
+.simObg p{
+    font-size: 10pt;
+    color: rgba(165, 42, 42, 0.788);
+    font-weight: normal;
+}
+nav{
+	background: brown;
+	padding: 10px;
+}
+a:link{
+text-decoration:none;
+}
+.icones{
+	margin-right: 10rem;
+	margin-bottom: 12px;
+}
+.elemento{
+	margin-right: 20px;
+	font-size: 22px;
+	margin-top: 30px;
+	color: white;
+	outline: none;
+	float: right;
+}
+.elemento:hover{
+	font-size: 24px;
+	color: white;
+}
+section{
+	margin-top: 40px;
+}
+#titulo1{
+	font-size: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.img{
+	width: 80px;
+	margin-left: 50px;
+	margin-top: 12px;
+}
